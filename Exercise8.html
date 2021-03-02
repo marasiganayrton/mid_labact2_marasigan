@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<div class="navbar">
+     <a href="index.html">Home</a>
+     <a href="Exercise4b.html">Exercise4b</a>
+     <a href="Exercise5b.html">Exercise5b</a>
+     <a href="Exercise5c.html">Exercise5c</a>
+	 <a href="Exercise6a.html">Exercise6a</a>
+	 <a href="Exercise6b.html">Exercise6b</a>
+	 <a href="Exercise7a.html">Exercise7a</a>
+	 <a href="Exercise8.html">Exercise8</a>
+    </div> 
+	<title>Registration Form Ayrton Marasigan</title>
+	<style>
+    input[type] {
+
+		border: 2px solid black;
+ }
+ 
+ .navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+
+<body class="ex1">
+<br>
+
+<img src="images/logo.png" alt="logo" width="150px" height="80px">
+<h2 align="center">Student Profile</h2> <br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+
+<form>
+	<label for="idnumber">Student ID Number&emsp;&emsp;&emsp;&emsp;&emsp;:</label>
+	<input type="text" style="" id="idnumber" name="idnumber" minlength= "5" maxlength="12"><br><br>
+  
+	<label for="sname">Student Name&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp:</label>
+	<input type="text" id="sname" name="sname" placeholder="Surname" size="27"> ,
+	<input type="text" id="sname" name="sname" placeholder="First Name" size="23">
+	<input type="text" id="sname" name="sname" placeholder="Middle Name" size="18"><br><br>
+  
+	<label for="course/program"> Course/Program&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp:</label>
+         <select name="course/program" id="course/program" >
+			<option value="Samplecourse"> --- Select your course/program ---</option>
+            <option value="BSIT(IT)- BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY">BSIT(IT)- BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</option>
+            <option value="BSCS(IT)- BACHELOR OF SCIENCE IN COMPUTER SCIENCE">BSCS(IT)- BACHELOR OF SCIENCE IN COMPUTER SCIENCE</option>
+			<option value="BSCE(IT)- BACHELOR OF SCIENCE IN COMPUTER ENGINEERING">BSCE(IT)- BACHELOR OF SCIENCE IN COMPUTER ENGINEERING</option>             
+       </select> <br><br>
+	   
+	
+		<label for="mobilenum">Mobile Number&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;:</label>
+		<input type="number" id="mobilenum" name="mobilenum" maxlength="11">
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+		<label for="email">Email Address&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:</label>
+		<input type="email" id="email" name="email" size="30"> <br> <br>
+
+
+		<label for="raddress">Residential Address &emsp;&emsp;&emsp;&emsp;&emsp;:</label>
+		<input type="text" id="raddress" name="raddress" size="50">
+		&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<label for="paddress">Permanent Address&emsp;&emsp;&emsp;&emsp;&emsp;:</label>
+		<input type="text" id="paddress" name="paddress" size="50"> <br> <br>
+		
+	<label for="region"> (Permanent) Region&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;:</label>
+         <select name="region" id="region" >
+			<option value="region0"> --- Select your Region --- </option>
+			<option value="region1"> Region I </option>
+            <option value="region2"> Region II </option>
+			<option value="region3"> Region III </option>
+			<option value="region4"> Region IV-A </option>
+			<option value="region5"> Region IV-B </option>
+			<option value="region6"> Region V </option>
+			<option value="region7"> CAR </option>
+			<option value="region8"> NCR </option>
+			<option value="region9"> Region VI </option>
+			<option value="region10"> Region VII </option>
+			<option value="region11"> Region VIII</option>
+			<option value="region12"> Region IX </option>
+			<option value="region13"> Region X </option>
+			<option value="region14"> Region XI </option>
+			<option value="region15"> Region XII </option>
+			<option value="region16"> Region XIII </option>
+			<option value="region17"> BARMM </option>			
+       </select> <br><br>
+	   
+	   <label for="province"> (Permanent) Province &emsp;&emsp;&emsp;&emsp;&nbsp;:</:</label>
+         <select name="province" id="province" >
+				<option value="province"> --- Select your province ---</option>
+				<option value="Abra">Abra</option>
+				<option value="Agusan del Norte"> Agusan del Norte </option>
+				<option value="Agusan del Sur"> Agusan del Sur </option>
+				<option value="Aklan"> Aklan </option>
+				<option value="Albay"> Albay </option>
+				<option value="Antique"> Antique </option>
+				<option value="Apayao"> Apayao </option>
+				<option value="Aurora"> Aurora </option>
+				<option value="Basilan"> Basilan </option>
+				<option value="Bataan"> Bataan </option>
+				<option value="Batanes"> Batanes </option>
+				<option value="Batangas"> Batangas </option>
+				<option value="Biliran"> Biliran </option>
+				<option value="Benguet"> Benguet </option>
+				<option value="Bohol"> Bohol </option>
+				<option value="Bukidnon"> Bukidnon </option>
+				<option value="Bulacan"> Bulacan </option>
+				<option value="Cagayan"> Cagayan </option>
+				<option value="Camarines Norte"> Camarines Norte </option>
+				<option value="Camarines Sur">Camarines Sur</option>
+				<option value="Camiguin">Camiguin</option>
+				<option value="Capiz">Capiz</option>
+				<option value="Catanduanes">Catanduanes</option>
+				<option value="Cavite">Cavite</option>
+				<option value="Cebu">Cebu</option>
+				<option value="Compostela">Compostela</option>
+				<option value="Davao del Norte">Davao del Norte</option>
+				<option value="Davao del Sur">Davao del Sur</option>
+				<option value="Davao Oriental">Davao Oriental</option>
+				<option value="Eastern Samar">Eastern Samar</option>
+				<option value="Guimaras">Guimaras</option>
+				<option value="Ifugao">Ifugao</option>
+				<option value="Ilocos Norte">Ilocos Norte</option>
+				<option value="Ilocos Sur">Ilocos Sur</option>
+				<option value="Iloilo">Iloilo</option>
+				<option value="Isabela">Isabela</option>
+				<option value="Kalinga">Kalinga</option>
+				<option value="Laguna">Laguna</option>
+				<option value="Lanao del Norte">Lanao del Norte</option>
+				<option value="Lanao del Sur">Lanao del Sur</option>
+				<option value="La Union">La Union</option>
+				<option value="Leyte">Leyte</option>
+				<option value="Maguindanao">Maguindanao</option>
+				<option value="Marinduque">Marinduque</option>
+				<option value="Masbate">Masbate</option>
+				<option value="Mindoro Occidental">Mindoro Occidental</option>
+				<option value="Mindoro Oriental">Mindoro Oriental</option>
+				<option value="Misamis Occidental">Misamis Occidental</option>
+				<option value="Misamis Oriental">Misamis Oriental</option>
+				<option value="Mountain Province">Mountain Province</option>
+				<option value="Negros Occidental">Negros Occidental</option>
+				<option value="Negros Oriental">Negros Oriental</option>
+				<option value="North Cotabato">North Cotabato</option>
+				<option value="Northern Samar">Northern Samar</option>
+				<option value="Nueva Ecija">Nueva Ecija</option>
+				<option value="Nueva Vizcaya">Nueva Vizcaya</option>
+				<option value="Palawan">Palawan</option>
+				<option value="Pampanga">Pampanga</option>
+				<option value="Pangasinan">Pangasinan</option>
+				<option value="Quezon">Quezon</option>
+				<option value="Quirino">Quirino</option>
+				<option value="Rizal">Rizal</option>
+				<option value="Romblon">Romblon</option>
+				<option value="Samar">Samar</option>
+				<option value="Sarangani">Sarangani</option>
+				<option value="Siquijor">Siquijor</option>
+				<option value="Sorsogon">Sorsogon</option>
+				<option value="South Cotabato">South Cotabato</option>
+				<option value="Southern Leyte">Southern Leyte</option>
+				<option value="Sultan Kudarat">Sultan Kudarat</option>
+				<option value="Sulu">Sulu</option>
+				<option value="Surigao del Norte">Surigao del Norte</option>
+				<option value="Surigao del Sur">Surigao del Sur</option>
+				<option value="Tarlac">Tarlac</option>
+				<option value="Tawi-Tawi">Tawi-Tawi</option>
+				<option value="Zambales">Zambales</option>
+				<option value="Zamboanga del Norte">Zamboanga del Norte</option>
+				<option value="Zamboanga del Sur">Zamboanga del Sur</option>
+				<option value="Zamboanga Sibugay">Zamboanga Sibugay</option>
+       </select> <br><br>
+	    
+		<label for="municipality">(Permanent) Municipality &emsp;&emsp;&nbsp;&nbsp; :</label>
+		<input type="text" id="municipality" name="municipality" ><br><br>
+		
+		<label for="telno">Permanent Tel. No. &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp :</label>
+		<input type="tel" id="telno" name="telno" placeholder="123-4567" pattern="[0-9]{3}-[0-9]{4}"><br><br>
+		
+		 <label for="birthday">Date of Birth &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp:</label>
+		 <input type="date" id="birthday" name="birthday"> 
+		 
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;
+		
+		 <label for="birth">Place of Birth &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+		 <input type="text" id="birth" name="birth" ><br><br>
+		 
+		 
+		 <label for="genfer"> Gender &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp:</label>
+		 <input type="radio" id="male" name="gender" value="male">
+		 <label for="male">Male</label>
+		 <input type="radio" id="female" name="gender" value="female">
+		 <label for="female">Female</label>
+		 
+		 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp
+		 
+		 <label for="relegion"> Religion &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp:</label>
+         <input type="text" id="relegion" name="relegion" > <br><br>
+		 
+		 <label for="nationality">Nationality &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+		 <input type="text" id="nationality" name="nationality" >
+		 
+		 &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+		 
+		<label for="cstat"> Civil Status&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp; :</label>
+         <select name="cstat" id="cstat" >
+			<option value="cstat0"> --- Select your Civil Status --- </option>
+			<option value="cstat1"> Maried </option>
+            <option value="cstat2"> Single</option>
+			<option value="cstat3"> Widowed </option>
+			<option value="cstat4"> Divorced </option>
+         </select> <br><br>
+		 
+</form>  
+
+
+</body>
+</html>
